@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Issuer</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Receipt Issuer</h1>
+    <button onclick="connectWallet()">Connect Wallet</button>
+    <p id="walletStatus">Not Connected</p>
+    
+    <input type="number" id="ethAmount" placeholder="Amount in ETH" step="0.01"/>
+    <button onclick="issueReceipt()">Issue Receipt</button>
+
+    <button onclick="getTotalReceipts()">Get Total Receipts</button>
+    <p id="totalReceipts"></p>
+
+    <input type="number" id="receiptIndex" placeholder="Receipt Index"/>
+    <button onclick="getReceipt()">Get Receipt</button>
+    <p id="receiptDetails"></p>
+
+    <script src="java.js"></script> <!-- Ensure this is correctly linked -->
+</body>
+</html>
